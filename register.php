@@ -5,7 +5,7 @@
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-	body{  background-image:url("food3.jpeg");
+	body{  background-image:url("images/food3.jpeg");
 	       background-repeat:no-repeat;
             }
   </style>
@@ -15,7 +15,7 @@
   	<h2>Register</h2>
   </div>
 	
-  <form method="post" action="register.php">
+  <form method="post" action="server.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label>Customer</label>
@@ -33,6 +33,14 @@
   	  <label>Confirm password</label>
   	  <input type="password" name="password_2">
   	</div>
+    <div class="input-group">
+      <label>Region</label>
+      <input type="Region" name="Region">
+    </div>
+    <div class="input-group">
+      <label>State</label>
+      <input type="State" name="State">
+    </div>
   	<div class="input-group">
   	  <button type="submit" class="btn" name="reg_user">Register</button>
   	</div>
